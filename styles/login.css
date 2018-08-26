@@ -1,7 +1,26 @@
 html {
-  background-image: url(../images/background-image.jpg);
-  /*background-repeat: no-repeat;*/
-  /*background-position: center center;*/
-  background-size: cover;
-  background-attachment: fixed;
+    /*width: 900px;*/
+}
+
+body {
+    background-image: url(../images/background-image.jpg);
+    /*background-repeat: no-repeat;*/
+    /*background-position: center center;*/
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 415px) {
+	body {
+		background-image: none;
+	}
+    h1,h2 {
+        font-size: 32px;
+    }
 }
