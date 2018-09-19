@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>测试布局-全屏布局</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="404/favicon.ico">
+    <style>
+        html, body, .parent {
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .top {
+            position: absolute top:0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            border: solid 2px green;
+        }
+
+        .left {
+            position: absolute;
+            top: 100px;
+            left: 0;
+            bottom: 50px;
+            width: 200px;
+            border: solid 2px green;
+        }
+
+        .right {
+            position: absolute;
+            overflow: auto;
+            left: 200px;
+            right: 0;
+            top: 100px;
+            bottom: 50px;
+            border: solid 2px green;
+        }
+
+        .bottom {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 50px;
+            border: solid 2px green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="top">top</div>
+        <div class="left">left</div>
+        <div class="right">right</div>
+        <div class="bottom">bottom</div>
+
+    </div>
+</body>
+
+</html>
